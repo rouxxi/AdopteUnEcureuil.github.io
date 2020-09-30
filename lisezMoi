@@ -1,0 +1,18 @@
+Font:
+
+font-style = galdeano
+			V mobile:	V desktop:
+h1 = 			36px		80 px		
+H2 = 			24 px		36 px
+p =			18 px		18 px
+footer 			18 px		18 px
+menu-burger = 		20 px		20 px
+boutton = 		24 px 		24 px
+nav-bar-header =	20 px		36 px
+
+color used :
+bar-nav = 516743
+logo = white +  80% opacity
+Titre-index = 806221
+
+
