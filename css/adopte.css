@@ -1,0 +1,24 @@
+.profil{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.card{
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card-body{
+    padding: 1rem;
+}
+
+.card-img {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/profil-cucu-1.jpg");
+    height: 230px;
+    width: 180px;
+  }
