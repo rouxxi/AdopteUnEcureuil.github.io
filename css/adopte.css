@@ -1,24 +1,169 @@
-.profil{
-display: flex;
-flex-direction: column;
-align-items: center;
-
+body,
+html {
+    margin: 0;
+    padding: 0;
 }
 
-.card{
+
+/*Debut style barre nav*/
+
+.headerNav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #516743;
+    color: white;
+    min-height: 35px;
+}
+
+.headerNav ul {
+    display: flex;
+    margin: 0 5px;
+}
+
+.headerNav ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+
+/*fin style barre nav*/
+
+.alert {
+    border: 2px #7E552F solid;
+}
+
+
+/*Debut style slogan*/
+
+.slogan {
+    margin: 1rem;
+    text-align: center;
+}
+
+
+/*debut style link*/
+
+.headerNav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*fin style link*/
+
+
+/*Debut mise en forme des profil*/
+
+.profil {
     display: flex;
     border: 1px solid black;
-    margin: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.card-body{
-    padding: 1rem;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
 }
 
-.card-img {
+.profilImage {
+    width: 350vw;
+    max-width: 400px;
+    min-height: 250px;
+}
+
+.profilInfos {
+    padding: 0.8rem;
+}
+
+.profilInfos h2 {
+    margin: 8px 0;
+}
+
+
+/*Fin mise en forme des profil*/
+
+
+/*Debut style du button*/
+
+.button {
+    transition-duration: 0.2s;
+    border-radius: 18px;
+    background-color: #7E552F;
+    color: white;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: visible;
+    box-sizing: inherit;
+}
+
+
+/*Fin style du button*/
+
+
+/*Debut Insertion des image profil*/
+
+.p1 {
     background-size: cover;
     background-position: center;
     background-image: url("../img/profil-cucu-1.jpg");
-    height: 230px;
-    width: 180px;
-  }
+}
+
+.p2 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/profil-cucu-2.jpg");
+}
+
+.p3 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/profil-cucu-3.jpg");
+}
+
+.p4 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/profil-cucu-4.jpg");
+}
+
+.p5 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/profil-cucu-5.jpg");
+}
+
+.p6 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/profil-cucu-6.jpg");
+}
+
+
+/*Fin Insertion des image profil*/
+
+
+/*Debut style foter*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #516743;
+    color: white;
+}
+
+.footerInfo a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerInfo ul {
+    display: flex;
+    list-style: none;
+    padding: 0 5px;
+}
+
+.footerInfo ul li {
+    padding: 0 15px;
+}
+
+
+/*Debut style footer*/
