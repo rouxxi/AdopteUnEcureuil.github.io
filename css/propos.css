@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding 0;
 }
+
 h1{
     font-size: 36px;
     margin: 0;
@@ -56,3 +57,62 @@ input[type=submit] {
 footer {
     background-color: #516743 ;
 }
+
+
+/*Debut style barre nav*/
+
+.headerNav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #516743;
+    color: white;
+    min-height: 35px;
+}
+
+.headerNav ul {
+    display: flex;
+    margin: 0 5px;
+}
+
+.headerNav ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+.headerNav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*fin style barre nav*/
+
+
+/*Debut style foter*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #516743;
+    color: white;
+}
+
+.footerInfo a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerInfo ul {
+    display: flex;
+    list-style: none;
+    padding: 0 5px;
+}
+
+.footerInfo ul li {
+    padding: 0 15px;
+}
+
+
+/*Debut style footer*/
+
+

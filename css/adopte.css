@@ -9,7 +9,6 @@ html {
 .logo{
     position: absolute;
     z-index: 1;
-    left: 30px;
     top: 0;
 }
 /*Debut style logo*/
