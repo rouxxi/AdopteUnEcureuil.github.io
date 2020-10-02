@@ -1,46 +1,59 @@
-body{
+body, html{
     padding: 0;
-    margin; 0;
+    margin: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-.couv{
-    max-width: 100%;
-    display:flex;
 
-}
+.headerNav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #516743;
+        color: white;
+        min-height: 35px;
+    }
+    
+.headerNav ul {
+        display: flex;
+        margin: 0 5px;
+    }
+    
+.headerNav ul li {
+        list-style: none;
+        padding: 15px;
+        
+    }
+
 p {
     font-size: 18px;
     padding: 2em;
 }
 
-.titre_article {
+#titreArticle {
     display: flex;
-    position: absolute;
-    top: 400px;
-    height: auto;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/habitat.jpg");
+    height: 300px;
+    padding-left: 2em;
+    padding-right: 2em;
 
 }
 
 h1 {
     color: white;
-    text-align: center;
     font-size: 36px;
-    padding: 50px;
+    margin: 0;
 
 }
 h2 {
-color: #806221;
-padding-left: 2em;
-padding-right: 2em;
+    color: #806221;
+    padding-left: 2em;
+    padding-right: 2em;
 
-}
-footer {
-    background-color: #516743;
-    height: 50px;
-
-    
 }
 
 ul {
@@ -60,4 +73,30 @@ li {
 ul li a {
     text-decoration: none;
     color: white;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #516743;
+    color: white;
+    height: 50px;
+}
+
+.footerInfo a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerInfo ul {
+    display: flex;
+    list-style: none;
+    padding: 0 5px;
+
+}
+
+.footerInfo ul li {
+    padding: 0 15px;
 }
