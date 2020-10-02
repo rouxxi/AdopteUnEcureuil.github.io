@@ -1,11 +1,15 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     background-color: #516743;
+
+
 }
-.navigation{
+
+.navigation {
     display: flex;
     justify-content: flex-end;
     justify-content: space-around;
@@ -14,37 +18,134 @@ header{
     padding-top: 0;
     margin-bottom: 0;
     align-content: center;
+    max-height: 50%;
 }
-a{
+
+
+
+a {
     text-decoration: none;
     color: #fcfcfc;
-    
+
 
 }
 
-.imgCouverture{
+.imgCouverture {
     max-width: 100%;
     margin: 0;
+    background-size: cover;
+    background-position: center;
 }
 
-.mainTitle{
-    
+h1 {
+
     position: absolute;
-    top: 200px;
+    top: 150px;
     color: #fcfcfc;
+    left: 40px;
+    background-color: rgba(0, 0, 0, 0.4); 
     
-}
 
-.article{
+
+}
+.vignette{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    max-width: 50%;
+    align-items: center;
+}
+.vignette section{
+    border:1px solid black;
+    margin: 2em;
+    width: 230px;
+}
+.vignette section h2{
     text-align: center;
+}
+
+.maison {
+    display: flex;
+    flex-direction: column;
+    color: #806221;
+    margin-bottom: 20px;
+    margin-top: 20px;
     
-
 }
-footer{
+/* Debut animation */
+.maison:hover{
+    padding: 20px;
+    transition: 0.4s;
+}
+
+/* Debut animation Fin*/
+.alimentation {
+    display: flex;
+    flex-direction: column;
+    color: #806221;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.quisuisje {
+    display: flex;
+    flex-direction: column;
+    color: #806221;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.adoptemoi {
+    display: flex;
+    flex-direction: column;
+    color: #806221;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+footer {
     background-color: #516743;
+    margin-bottom: 0;
+
+
 }
 
+li {
+    list-style: none;
+    padding-right: 30px;                    
+
+}
+
+
+footer {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    color: #fcfcfc;
+    padding: 30px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+.imgCouverture{
+    max-height: 300px;
+
+}
+.vignette{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+
+}
