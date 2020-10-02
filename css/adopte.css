@@ -2,14 +2,24 @@ body,
 html {
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
+
+/*Debut style logo*/
+.logo{
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    top: 0;
+}
+/*Debut style logo*/
 
 
 /*Debut style barre nav*/
 
 .headerNav {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     background-color: #516743;
     color: white;
@@ -26,12 +36,7 @@ html {
     padding: 15px;
 }
 
-
 /*fin style barre nav*/
-
-.alert {
-    border: 2px #7E552F solid;
-}
 
 
 /*Debut style slogan*/
@@ -77,28 +82,6 @@ html {
 }
 
 
-/*Fin mise en forme des profil*/
-
-
-/*Debut style du button*/
-
-.button {
-    transition-duration: 0.2s;
-    border-radius: 18px;
-    background-color: #7E552F;
-    color: white;
-    padding: 6px 8px;
-    text-align: center;
-    font-size: 14px;
-    cursor: pointer;
-    overflow: visible;
-    box-sizing: inherit;
-}
-
-
-/*Fin style du button*/
-
-
 /*Debut Insertion des image profil*/
 
 .p1 {
@@ -141,6 +124,30 @@ html {
 /*Fin Insertion des image profil*/
 
 
+/*Fin mise en forme des profil*/
+
+
+/*Debut style du button*/
+
+.button {
+    transition-duration: 0.2s;
+    border-radius: 18px;
+    background-color: #7E552F;
+    color: white;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: visible;
+    box-sizing: inherit;
+}
+
+
+/*Fin style du button*/
+
+
+
+
 /*Debut style foter*/
 
 footer {
@@ -167,3 +174,11 @@ footer {
 
 
 /*Debut style footer*/
+
+
+
+@media screen and (min-width:768px){
+    main{
+        display:grid;
+    }
+}
