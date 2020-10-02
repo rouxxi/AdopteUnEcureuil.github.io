@@ -16,3 +16,9 @@ logo = white +  80% opacity
 Titre-index = 806221
 
 
+responsive @media query :
+mobile = 480px
+talbet = 767px
+tablet Ipad = 1024
+desktop = 1280px
+
