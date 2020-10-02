@@ -3,10 +3,9 @@ body {
     padding: 0;
 }
 
+/* Debut de mise en page en tete et navbar*/
 header {
     background-color: #516743;
-
-
 }
 
 .navigation {
@@ -20,16 +19,14 @@ header {
     align-content: center;
     max-height: 50%;
 }
-
+/*fin de mise en page*/
 
 
 a {
     text-decoration: none;
     color: #fcfcfc;
-
-
 }
-
+/* Photo de couverture avec titre*/
 .imgCouverture {
     max-width: 100%;
     margin: 0;
@@ -43,22 +40,25 @@ h1 {
     top: 150px;
     color: #fcfcfc;
     left: 40px;
-    background-color: rgba(0, 0, 0, 0.4); 
-    
+    background-color: rgba(0, 0, 0, 0.4);
 
+/*Fin de Photo de couverture et titre*/
 
 }
-.vignette{
+/*Photo liens vers articles et animations vignettes*/
+.vignette {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.vignette section{
-    border:1px solid black;
+
+.vignette section {
+    border: 1px solid black;
     margin: 2em;
     width: 230px;
 }
-.vignette section h2{
+
+.vignette section h2 {
     text-align: center;
 }
 
@@ -68,15 +68,16 @@ h1 {
     color: #806221;
     margin-bottom: 20px;
     margin-top: 20px;
-    
+
 }
+
 /* Debut animation */
-.maison:hover{
+.maison:hover {
     padding: 20px;
     transition: 0.4s;
 }
-
 /* Debut animation Fin*/
+
 .alimentation {
     display: flex;
     flex-direction: column;
@@ -102,8 +103,9 @@ h1 {
     margin-bottom: 20px;
     margin-top: 20px;
 }
+/*Fin de la partie Articles*/
 
-
+/*Bas de page avec la mise en page du footer*/
 footer {
     background-color: #516743;
     margin-bottom: 0;
@@ -113,7 +115,7 @@ footer {
 
 li {
     list-style: none;
-    padding-right: 30px;                    
+    padding-right: 30px;
 
 }
 
@@ -131,19 +133,20 @@ footer {
     color: #fcfcfc;
     padding: 30px;
 }
-
+/*Fin de bas de page du footer*/
 
 @media screen and (min-width: 768px) {
 
-.imgCouverture{
-    max-height: 300px;
+    .imgCouverture {
+        max-height: 300px;
 
-}
-.vignette{
-    display: flex;
-    justify-content: space-around;
+    }
 
-}
+    .vignette {
+        display: flex;
+        justify-content: space-around;
+
+    }
 
 
 
