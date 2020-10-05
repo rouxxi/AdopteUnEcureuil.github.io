@@ -10,28 +10,35 @@
 </head>
 
 <body>
-    <header>
-        <script src="js/propos.js"></script>
-
-        <span class="iconify" data-icon="octicon:squirrel-16" data-inline="false"></span>
-  
+    <header class="headerNav">
+        <img title="logoEcureuil" src="https://img.icons8.com/ios/100/000000/squirrel.png" alt="logo"/>
+        <div class="menuNav">
         <nav>
-            <ul class="navigation">
+            <ul>
                 <li><a href="adopte.html">Adoption</a></li>
-                <li><a href="maMaison.html">Article</a></li>
+                <li><a href="maMaison.html">Ma Maison</a></li>
+                <li><a href="monAlimentation.html">Mon alimentation</a></li>
+                <li><a href="quiSuisJe.html">Qui suis-je ?</a></li>
                 <li><a href="propos.html">A propos</a></li>
             </ul>
         </nav>
+    </div>
+        <div class="burger burgerButton">
+            <div class="burgerButtonLign"></div>
+        </div>
+        <div id = "burgerSideBar">
+            <div id = "burgerSideBar-Header"></div>
+            <div id = "burgerSideBar-body"></div>
+        </div>
+        <div id = "burgerOverlay"></div>
+
     </header>
     <div class="mainTitle">
         <h1>Adopte un Ecureuil !</h1>
     </div>
-    <img class="imgCouverture" src="img/johan-severino-pMbGBhhqSj4-unsplash.jpg" alt="Photo de couverture">
-
 <div class = "vignette">
     <section class="maison">
         <h2>Ma Maison</h2>
-        <img src="img/vladislav-nikonov-ubminukv5iE-unsplash(1).jpg" alt="Photo Maison">
     </section>
 
     <section class="alimentation">
@@ -70,7 +77,7 @@
     </footer>
 
     <script src="js/index.js"></script>
-
+    <script src="js/burger.js"></script>
 </body>
 
 </html>
