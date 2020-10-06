@@ -12,8 +12,28 @@
 </head>
 
 <body>
-    <header>
-        <span class="iconify" data-icon="octicon:squirrel-16" data-inline="false"></span>
+    <header class="headerNav">
+        <img title="logoEcureuil" src="https://img.icons8.com/ios/100/000000/squirrel.png" alt="logo"/>
+        <div class="menuNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="adopte.html">Adoption</a></li>
+                <li><a href="maMaison.html">Ma maison</a></li>
+                <li><a href="monAlimentation.html">Mon alimentation</a></li>
+                <li><a href="quiSuisJe.html">Qui suis-je ?</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="burger burgerButton">
+            <div class="burgerButtonLign"></div>
+        </div>
+        <div id = "burgerSideBar">
+            <div id = "burgerSideBar-Header"></div>
+            <div id = "burgerSideBar-body"></div>
+        </div>
+        <div id = "burgerOverlay"></div>
+
     </header>
     <div class="Page-title">
         <h1>Propos</h1>
@@ -65,21 +85,26 @@
         <textarea id="subject" name="subject" placeholder="Message"></textarea>
         <input type="submit" value="Submit">
     </form>
-
-
+    <div class="Map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.484231405581!2d-1.5577809847016433!3d47.20710677916023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ef2139832f6b%3A0xe5aaf780b1ea1c91!2sWild%20Code%20School%20-%20Training%20D%C3%A9veloppeur%20Web%20Et%20Data%20Analyst!5e0!3m2!1sen!2sfr!4v1601987759763!5m2!1sen!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
 
     <footer>
-        <ul class=footer>
-            <li><a href="propos.html" title="mentions">Mentions légales</a></li>
-            <li> <a href="propos.html" title="propos">Contact</a></li>
+        <div class="footerInfo">
+            <ul>
+                <li><a href="propos.html" title="mentions">Mentions légales</a></li>
+                <li> <a href="propos.html" title="propos">Contact</a></li>
             </ul>
+        </div>
         <div class=footer>
+            <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
             <span class="iconify" data-icon="ant-design:facebook-outlined" data-inline="false"></span>
             <span class="iconify" data-icon="fa-brands:pinterest-square" data-inline="false"></span>
             <span class="iconify" data-icon="ant-design:twitter-circle-filled" data-inline="false"></span>
         </div>
     </footer>
     <script src="js/propos.js"></script>
+    <script src="js/burger.js"></script>
 </body>
 
 </html>
