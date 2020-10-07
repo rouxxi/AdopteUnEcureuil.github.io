@@ -1,7 +1,13 @@
 body, html{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
 }
+
+
 /*Debut style barre nav*/
 
 .headerNav {
@@ -185,37 +191,92 @@ body, html{
 
 }
 
-input[type=text], select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical
+h1, h2{
+    color: #806221;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-input[type=submit] {
-    background-color: #7E552F;
-    color: white;
+/*main page*/
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: 20px 0 80px;
+}
+
+.card {
+	width: 300px;
+	margin: 10px;
+	background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*Contact form*/
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  max-height: 140px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+  
+.form {
+    text-align: left;
+    background-color: #ffffff22;
+    padding: 30px;
+    border-radius: 12px;
+}
+  
+  /* Submit button */
+input[type="submit"] {
+    background-color: #c0c0c0;
+    color: black;
     padding: 12px 20px;
+    min-height: 20px;
+    min-width: 120px;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
-}   
- 
-
-
-.Contact{
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    
+    font-weight: 600;
+}
+  
+  /*button hover effect*/
+input[type="submit"]:hover {
+    background-color: #092c12;
+}
+  
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
     background-color: #516743 ;
 }
 
+
+.row{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-right: -.5rem;
+    margin-left: -.5rem;
+    flex-direction: row;
+}
+
+.info{
+    text-align: center;
+    margin: auto;
+    box-sizing: content-box;
+}
 
