@@ -153,7 +153,9 @@ body, html{
 
 p {
     font-size: 18px;
-    padding: 2em;
+    padding-bottom: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
 }
 
 #titreArticle {
@@ -184,28 +186,60 @@ h2 {
 }
 
 .photo {
-    width: 300px;
-}
-.photo:hover{
-	width:320px;
+    width: 450px;
 }
 
 .container {
     display: block;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 2em;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #fcfcfc;
+}
+
+footer ul{
+    padding: 10px;
+    text-align: center;
+    font-size: small;
+}
+
+ footer li {
+    list-style: none;
+    padding-right: 30px;
 
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: #516743;
-    color: white;
-    height: 50px;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    color: #fcfcfc;
+    padding: 10px;
+    font-size: larger;
+}
+.copyright{
+    text-align: justify, center;
+    font-size: xx-small;
+    word-wrap: break-word;
+    color: #fcfcfc;
+}
+
+
+
+/*
 .footerInfo a {
     text-decoration: none;
     color: white;
@@ -221,6 +255,8 @@ footer {
 .footerInfo ul li {
     padding: 0 15px;
 }
+
+*/
 
 
 @media screen and (max-width:1023px){
@@ -239,6 +275,9 @@ footer {
     
     #titreArticle {
         height: 300px;
+    }
+    .photo {
+        width: 300px;
     }
 
 
@@ -262,5 +301,14 @@ footer {
     h2 {
         font-size: 2em;
     }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        color: #fcfcfc;
+        padding: 30px;
+        font-size: xx-large;
+    }
+    
 
 }
