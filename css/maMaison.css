@@ -1,9 +1,106 @@
 body, html{
+    margin:0;
     padding: 0;
-    margin: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
 }
+
+
+/*Debut police homogene mobile*/
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+/*Debut police homogene mobile*/
+
+
+/*Debut style footer*/
+
+footer {
+    background-color: #516743;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footerinfo li{
+    padding: 5px 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    color: #fcfcfc;
+    padding: 10px;
+    font-size: xx-large;
+}
+
+
+footer ul {
+    padding: 10px;
+
+
+}
+
+footer li {
+    list-style: none;
+    padding-right: 30px;
+    color: #fcfcfc;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fcfcfc;
+    text-align: center;
+
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fcfcfc;
+    font-size: xx-small;
+}
+
+.footer img {
+    filter: invert(100%);
+    font-size: xx-small;
+    width: 35px;
+    margin: 5px;
+}
+
+
+.copyright {
+    text-align: justify, center;
+    font-size: xx-small;
+    word-wrap: break-word;
+    color: #fcfcfc;
+    padding: 1em;
+}
+/*Fin design footer*/
+
+/*Debut police homogene mobile*/
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+/*Debut police homogene mobile*/
+
 
 /*Debut style barre nav*/
 
@@ -206,33 +303,52 @@ body, html{
 
 
 
-ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #516743;
-    color: white;
-    height: 50px;
-}
-
-.footerInfo a {
-    text-decoration: none;
-    color: white;
-}
-
-.footerInfo ul {
-    display: flex;
-    list-style: none;
-    padding: 0 5px;
+.container {
+    display: block;
+    text-align: center;
+    overflow: hidden;
 
 }
 
-.footerInfo ul li {
-    padding: 0 15px;
+
+@media screen and (max-width:1023px){
+    .menuNav{
+        display: none;
+    }
+    
+    .burgerButtonLign, #burgerSideBar,
+     .burgerActivated #burgerOverlay{
+        display: block;
+    }
+
+    .burgerActivated #burgerSideBar{
+        transform: translateX(0);
+    }
+    
+    #titreArticle {
+        height: 300px;
+    }
+
+
+}
+
+@media screen and (min-width:1024px){
+    .burger{
+        display: none;
+    }
+    /*Police headerNav*/
+    .headerNav{
+        font-size: 1.5em;
+    }
+    /*Police headerNav*/
+
+    h1{
+    font-size: 80px;
+
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
 }
