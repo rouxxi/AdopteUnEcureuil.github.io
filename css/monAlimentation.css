@@ -1,8 +1,93 @@
 body, html{
     margin:0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
-/*Debut style barre nav*/
+
+
+/*Debut police homogene mobile*/
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+/*Debut police homogene mobile*/
+
+
+/*Debut style footer*/
+
+footer {
+    background-color: #516743;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footerinfo li{
+    padding: 5px 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    color: #fcfcfc;
+    padding: 10px;
+    font-size: xx-large;
+}
+
+
+footer ul {
+    padding: 10px;
+
+
+}
+
+footer li {
+    list-style: none;
+    padding-right: 30px;
+    color: #fcfcfc;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fcfcfc;
+    text-align: center;
+
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fcfcfc;
+    font-size: xx-small;
+}
+
+.footer img {
+    filter: invert(100%);
+    font-size: xx-small;
+    width: 35px;
+    margin: 5px;
+}
+
+
+.copyright {
+    text-align: justify, center;
+    font-size: xx-small;
+    word-wrap: break-word;
+    color: #fcfcfc;
+    padding: 1em;
+}
+/*Fin design footer*/
+
 
 .headerNav {
     display: flex;
@@ -136,26 +221,64 @@ body, html{
 }
 #burgerSideBar-body li{
     padding: 8px 0 8px 5px;
+    
 }
 #burgerSideBar-body{
     padding: 10px 5px;
     font-size: 1.6em;
+    display: block;
+
 }
-
-/*Fin  positionnement et style Sidebar*/
-
-
-
-/*debut style link*/
 
 .headerNav ul li a {
     text-decoration: none;
     color: white;
 }
 
+p {
+    font-size: 18px;
+    padding-bottom: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+}
 
-/*fin style link*/
+#titreArticle {
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/alimentation.jpg");
+    height: 500px;
+    padding-left: 2em;
+    padding-right: 2em;
 
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width:100%;
+
+}
+h2 {
+    color: #806221;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+.photo {
+    width: 450px;
+}
+
+.container {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 2em;
+
+}
 
 
 @media screen and (max-width:1023px){
@@ -171,6 +294,15 @@ body, html{
     .burgerActivated #burgerSideBar{
         transform: translateX(0);
     }
+    
+    #titreArticle {
+        height: 300px;
+    }
+    .photo {
+        width: 300px;
+    }
+
+
 }
 
 @media screen and (min-width:1024px){
@@ -182,5 +314,6 @@ body, html{
         font-size: 1.5em;
     }
     /*Police headerNav*/
+  
 
 }

@@ -1,7 +1,100 @@
-body, html{
-    margin:0;
+
+*{
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
+​
+body{
+	height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+/*Debut police homogene mobile*/
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+/*Debut police homogene mobile*/
+
+
+/*Debut style footer*/
+
+footer {
+    background-color: #516743;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footerinfo li{
+    padding: 5px 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    color: #fcfcfc;
+    padding: 10px;
+    font-size: xx-large;
+}
+
+
+footer ul {
+    padding: 10px;
+
+
+}
+
+footer li {
+    list-style: none;
+    padding-right: 30px;
+    color: #fcfcfc;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fcfcfc;
+    text-align: center;
+
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fcfcfc;
+    font-size: xx-small;
+}
+
+.footer img {
+    filter: invert(100%);
+    font-size: xx-small;
+    width: 35px;
+    margin: 5px;
+}
+
+
+.copyright {
+    text-align: justify, center;
+    font-size: xx-small;
+    word-wrap: break-word;
+    color: #fcfcfc;
+    padding: 1em;
+}
+/*Fin design footer*/
+
+
 /*Debut style barre nav*/
 
 .headerNav {
@@ -11,7 +104,6 @@ body, html{
     background-color: #516743;
     color: white;
     min-height: 35px;
-
     font-size: 1.1rem;
 }
 .headerNav img{
@@ -145,6 +237,14 @@ body, html{
 /*Fin  positionnement et style Sidebar*/
 
 
+/*Debut style slogan*/
+
+.slogan {
+    color: #806221;
+    margin: 1rem;
+    text-align: center;
+}
+
 
 /*debut style link*/
 
@@ -155,6 +255,111 @@ body, html{
 
 
 /*fin style link*/
+
+
+
+
+​
+​
+/*H2 and H1 maybe some P.. i dont know. we will see*/
+​
+h1, h2{
+    color: #806221;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+​
+/*main page*/
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: 20px 0 80px;
+}
+​
+.card {
+	width: 300px;
+	margin: 10px;
+	background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+​
+/*partners*/
+​
+​
+​
+​
+​
+​
+/*Contact form*/
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  max-height: 140px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+  
+  .form {
+    text-align: left;
+    background-color: #ffffff22;
+    padding: 30px;
+    border-radius: 12px;
+  }
+  
+  /* Submit button */
+  input[type="submit"] {
+    background-color: #c0c0c0;
+    color: black;
+    padding: 12px 20px;
+    min-height: 20px;
+    min-width: 120px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  /*button hover effect*/
+  input[type="submit"]:hover {
+    background-color: #092c12;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+​
+section#Contact-form{
+    background: url(img/eran-menashri-qWXWQoYrOnk-unsplash.jpg)no-repeat center center/cover;
+}
+​
+/**/
+​
+.row{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-right: -.5rem;
+    margin-left: -.5rem;
+    flex-direction: row;
+}
+​
+.info{
+    text-align: center;
+    margin: auto;
+    box-sizing: content-box;
+}
+
 
 
 
@@ -177,6 +382,24 @@ body, html{
     .burger{
         display: none;
     }
+    /*Debut mise en place page desktop*/
+    .profils {
+        display: grid;
+        grid-template-columns: 0.3fr 2fr 2fr 0.3fr;
+        grid-gap: 1em;
+    }
+
+    .profil:nth-child(1),.profil:nth-child(3),.profil:nth-child(5){
+       grid-column: 2/3;
+       max-height: 500px;
+    }
+
+    .profil:nth-child(2), .profil:nth-child(4), .profil:nth-child(6){
+        grid-column: 3/4;
+        max-height: 500px;
+    }
+    /*Fin mise en place page desktop*/
+
     /*Police headerNav*/
     .headerNav{
         font-size: 1.5em;
@@ -185,37 +408,33 @@ body, html{
 
 }
 
-input[type=text], select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical
+
+
+
+
+/*H2 and H1 maybe some P.. i dont know. we will see*/
+​
+h1, h2{
+    color: #806221;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
-
-input[type=submit] {
-    background-color: #7E552F;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}   
- 
-
-
-.Contact{
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    
+​
+/*main page*/
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: 20px 0 80px;
 }
-
-footer {
-    background-color: #516743 ;
+​
+.card {
+	width: 300px;
+	margin: 10px;
+	background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
-
-
+​
+/*partners*/

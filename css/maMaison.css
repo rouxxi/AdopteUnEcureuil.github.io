@@ -8,10 +8,10 @@ body, html{
 
 /*Debut police homogene mobile*/
 h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 h2{
-    font-size: 36px;
+    font-size: 30px;
 }
 
 p {
@@ -88,18 +88,6 @@ footer a {
 }
 /*Fin design footer*/
 
-/*Debut police homogene mobile*/
-h1{
-    font-size: 50px;
-}
-h2{
-    font-size: 36px;
-}
-
-p {
-    font-size: 18px;
-}
-/*Debut police homogene mobile*/
 
 
 /*Debut style barre nav*/
@@ -258,34 +246,6 @@ p {
 
 
 
-@media screen and (max-width:1023px){
-    .menuNav{
-        display: none;
-    }
-    
-    .burgerButtonLign, #burgerSideBar,
-     .burgerActivated #burgerOverlay{
-        display: block;
-    }
-
-    .burgerActivated #burgerSideBar{
-        transform: translateX(0);
-    }
-}
-
-@media screen and (min-width:1024px){
-    .burger{
-        display: none;
-    }
-    /*Police headerNav*/
-    .headerNav{
-        font-size: 1.5em;
-    }
-    /*Police headerNav*/
-
-}
-
-
 #titreArticle {
     display: flex;
     align-items: flex-end;
@@ -299,17 +259,37 @@ p {
 
 }
 
+h1 {
+    color: white;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width:100%;
+
+}
+
+h2 {
+    color: #806221;
+    padding-left: 1em;
+    
+}
 
 
-
+.photo {
+    width: 500px;
+    box-shadow: 1px 1px 1px grey;
+}
 
 .container {
     display: block;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 2em;
 
 }
 
+main{
+    margin:1em;
+}
 
 @media screen and (max-width:1023px){
     .menuNav{
@@ -324,11 +304,12 @@ p {
     .burgerActivated #burgerSideBar{
         transform: translateX(0);
     }
-    
     #titreArticle {
         height: 300px;
     }
-
+    .photo {
+        width: 300px;
+    }
 
 }
 
@@ -336,19 +317,21 @@ p {
     .burger{
         display: none;
     }
+    /*Debut mise en place page desktop*/
+
+    /*Fin mise en place page desktop*/
+
     /*Police headerNav*/
     .headerNav{
         font-size: 1.5em;
     }
     /*Police headerNav*/
-
-    h1{
-    font-size: 80px;
-
+    h1 {
+        font-size: 50px;
     }
-
-    h2 {
-        font-size: 2em;
+    #titreArticle{
+        background-position-y: -230px;
+        height: 350px;
     }
 
 }

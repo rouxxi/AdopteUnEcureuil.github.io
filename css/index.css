@@ -523,6 +523,7 @@ en largeur il fait 100% x le nombre de slides
 
     #slideshow {
         display: block;
+        margin-top: 40px;
     }
     /*Police headerNav*/
     .headerNav{
@@ -555,6 +556,7 @@ en largeur il fait 100% x le nombre de slides
         background-size: cover;
         min-height: 250px;
         width: 25vw;
+        margin-top: 20px;
     }
 
 }

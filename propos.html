@@ -13,15 +13,15 @@
 
 <body>
     <header class="headerNav">
-        <img title="logoEcureuil" src="https://img.icons8.com/ios/100/000000/squirrel.png" alt="logo"/>
+        <a href= "index.html"><img title="logoEcureuil" src="https://img.icons8.com/ios/100/000000/squirrel.png" alt="logo"/></a>
         <div class="menuNav">
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
                 <li><a href="adopte.html">Adoption</a></li>
-                <li><a href="maMaison.html">Ma maison</a></li>
+                <li><a href="maMaison.html">Mon habitat</a></li>
                 <li><a href="monAlimentation.html">Mon alimentation</a></li>
                 <li><a href="quiSuisJe.html">Qui suis-je ?</a></li>
+                <li><a href="propos.html">A propos</a></li>
             </ul>
         </nav>
     </div>
@@ -33,74 +33,100 @@
             <div id = "burgerSideBar-body"></div>
         </div>
         <div id = "burgerOverlay"></div>
-
     </header>
     <div class="Page-title">
         <h1>Propos</h1>
         <h2>Notre mission</h2>
     </div>
-    <article>
-        <h3>Cat's might chase them</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum rerum doloremque sequi, ipsum quaerat
-            cupiditate? Quia est, unde consequatur aliquid neque illum inventore, enim repellat perspiciatis officia ad
-            exercitationem saepe?</p>
-    </article>
-
-    <article>
-        <h3>Dog's too</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt cum illo libero. Aliquid adipisci
-            autem atque facilis nisi ipsum, possimus eos soluta esse optio impedit ex eius omnis ipsam!</p>
-    </article>
-
-    <article>
-        <h3>We all want one</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores atque error architecto corporis commodi
-            obcaecati modi, distinctio mollitia sapiente ullam dolorum tempore ex? Tempora itaque nesciunt soluta,
-            suscipit voluptates nisi.</p>
-    </article>
-
-    <div class="partners">
-        <h2>Nos Partenaire</h2>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+​
+​
+    <div class="container">
+      <div class="card">
+        <figure class="card__thumb">
+          <img src="img/article one.jpg" alt="squirrel1" class="card__image">
+          <figcaption class="card__caption">
+            <h2 class="card__title">How to help all squirrels</h2>
+            <p class="card__snippet">An easy way to find your nearest rehabilitation center is to use the Human Society's
+              directory that is organized by state. You can access this at their website. </p>
+            <a href="" class="card__button">Read more</a>
+          </figcaption>
+        </figure>
+      </div>
+  
+      <div class="card">
+        <figure class="card__thumb">
+          <img src="img/article two.jpg" alt="squirrel2" class="card__image">
+          <figcaption class="card__caption">
+            <h2 class="card__title">Make a monthly donation</h2>
+            <p class="card__snippet">You can protect threatened species and their habitats today with a monthly donation
+              to World Wildlife Fund.</p>
+            <a href="" class="card__button">Read more</a>
+          </figcaption>
+        </figure>
+      </div>
+  
+      <div class="card">
+        <figure class="card__thumb">
+          <img src="img/article tree.jpg" alt="squirrel3" class="card__image">
+          <figcaption class="card__caption">
+            <h2 class="card__title">Why You Should Bring Your squirrel To Work</h2>
+            <p class="card__snippet">On Friday, offices around the country celebrated the 15th annual Take Your Squirrel
+              to Work Day.</p>
+            <a href="" class="card__button">Read more</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+​
+    
+    <section id="Contact-form">
+      <h2>Contact Us</h2>
+    <div class="form">
+        <form action="/action_page.php">
+          <input type="text" id="name" name="name" placeholder="Your Name">
+          <input type="text" id="email" name="email" placeholder="Email*">
+          <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+          <div class="button">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </section> 
+​
+    <div class="Partenaire">
+​
+    </div>
+​
+    <div class="container">
+        <div class="row">
+            <div class="info">
+            <h4>For more information</h4>
+            <p><i>Call us</i> <i>0679483624</i></p>
+            </div>
+            <div class="Map"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.484231405581!2d-1.5577809847016433!3d47.20710677916023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ef2139832f6b%3A0xe5aaf780b1ea1c91!2sWild%20Code%20School%20-%20Training%20D%C3%A9veloppeur%20Web%20Et%20Data%20Analyst!5e0!3m2!1sen!2sfr!4v1601987759763!5m2!1sen!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div> 
+        </div>
     </div>
 
-    <h2>Contactez-nous</h2>
-    <form class="Contact">
-        <label for="Full Name">Full Name</label>
-        <input type="text" id="fname" name="fulname" placeholder="Full name">
-        <label for="Email">Email</label>
-        <input type="text" id="email" name="email" placeholder="Email">
-        <label for="Motif">Motif</label>
-        <select id="sujet" name="motif">
-            <option value="Adoption">Adoption</option>
-            <option value="Contacter">Nous Contacter</option>
-            <option value="Benevola">Bénévola</option>
-        </select>
-        <label for="message">message</label>
-        <textarea id="subject" name="subject" placeholder="Message"></textarea>
-        <input type="submit" value="Submit">
-    </form>
-
-
-
     <footer>
-        <div class="footerInfo">
+        <section class="footerinfo">
             <ul>
                 <li><a href="propos.html" title="mentions">Mentions légales</a></li>
                 <li> <a href="propos.html" title="propos">Contact</a></li>
             </ul>
+        </section>
+        <div class="copyright">© 2020 Copyright:
+            <a href="https://AdopteunEcureuil.com/">Adopte un Ecureuil</a>
         </div>
         <div class=footer>
-            <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-            <span class="iconify" data-icon="ant-design:facebook-outlined" data-inline="false"></span>
-            <span class="iconify" data-icon="fa-brands:pinterest-square" data-inline="false"></span>
-            <span class="iconify" data-icon="ant-design:twitter-circle-filled" data-inline="false"></span>
+            
+            <img title="facebook" src="/img/logo/facebook.png" alt="logofacebook">
+            <img title="twitter" src="/img/logo/icons8-twitter-80.png" alt="logotwitter">
+            <img title="pinterest" src="/img/logo/icons8-pinterest-80.png" alt="logopinterest">
+            <img title="instagram" src="img/logo/icons8-instagram-80.png" alt="logoInstagram">
         </div>
+    
     </footer>
     <script src="js/propos.js"></script>
     <script src="js/burger.js"></script>
