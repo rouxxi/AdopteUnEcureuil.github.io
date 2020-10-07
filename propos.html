@@ -13,14 +13,27 @@
 
 <body>
     <header class="headerNav">
-        <span class="iconify" data-icon="octicon:squirrel-16" data-inline="false"></span>
+        <img title="logoEcureuil" src="https://img.icons8.com/ios/100/000000/squirrel.png" alt="logo"/>
+        <div class="menuNav">
         <nav>
-            <ul class="navigation">
+            <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="adopte.html">Adoption</a></li>
-                <li><a href="maMaison.html">Article</a></li>
+                <li><a href="maMaison.html">Ma maison</a></li>
+                <li><a href="monAlimentation.html">Mon alimentation</a></li>
+                <li><a href="quiSuisJe.html">Qui suis-je ?</a></li>
             </ul>
         </nav>
+    </div>
+        <div class="burger burgerButton">
+            <div class="burgerButtonLign"></div>
+        </div>
+        <div id = "burgerSideBar">
+            <div id = "burgerSideBar-Header"></div>
+            <div id = "burgerSideBar-body"></div>
+        </div>
+        <div id = "burgerOverlay"></div>
+
     </header>
     <div class="Page-title">
         <h1>Propos</h1>
@@ -90,6 +103,7 @@
         </div>
     </footer>
     <script src="js/propos.js"></script>
+    <script src="js/burger.js"></script>
 </body>
 
 </html>

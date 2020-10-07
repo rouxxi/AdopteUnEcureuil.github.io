@@ -13,24 +13,35 @@
 </head>
 
 <body>
-    <header>
-        <script src="js/propos.js"></script>
 
-        <span class="iconify" data-icon="octicon:squirrel-16" data-inline="false"></span>
+    <header class="headerNav">
+        <img title="logoEcureuil" src="https://img.icons8.com/ios/100/000000/squirrel.png" alt="logo" />
+        <div class="menuNav">
+            <nav>
+                <ul>
+                    <li><a href="adopte.html">Adoption</a></li>
+                    <li><a href="maMaison.html">Ma Maison</a></li>
+                    <li><a href="monAlimentation.html">Mon alimentation</a></li>
+                    <li><a href="quiSuisJe.html">Qui suis-je ?</a></li>
+                    <li><a href="propos.html">A propos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger burgerButton">
+            <div class="burgerButtonLign"></div>
+        </div>
+        <div id="burgerSideBar">
+            <div id="burgerSideBar-Header"></div>
+            <div id="burgerSideBar-body"></div>
+        </div>
+        <div id="burgerOverlay"></div>
 
-        <nav>
-            <ul class="navigation">
-                <li><a href="adopte.html">Adoption</a></li>
-                <li><a href="maMaison.html">Article</a></li>
-                <li><a href="propos.html">A propos</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section id = "Titreindex">
-    <h1>Adopte un Ecureuil !</h1>
+    <section id="Titreindex">
+        <h1>Adopte un Ecureuil !</h1>
     </section>
-    
+
     <div class="vignette">
         <section class="maison">
             <h2>Ma Maison</h2>
@@ -48,21 +59,45 @@
         </section>
     </div>
 
-    <section class="caroussel">
-        <div id="slider">
-            <figure>
-                <img src="img/profil-cucu-3 mobile (1).jpg">
-                <img src="img/profil-cucu-3 mobile (2).jpg">
-                <img src="img/profil-cucu-3 mobile (3).jpg">
-                <img src="img/profil-cucu-3 mobile (4).jpg">
-                <img src="img/profil-cucu-3 mobile (5).jpg">
-            </figure>
+    <section id="slideshow">
+        
+		
+        <div class="container">
+            <div class="c_slider"></div>
+            <div class="slider">
+                <figure>
+                    <img src="img/img slider/jelle-de-gier-X16b0JLFfqI-unsplash.jpg" alt="" width="640" height="310" />
+                    <figcaption>Noisette</figcaption>
+    
+                </figure><!--
+                --><figure>
+                    <img src="img/img slider/jonnelle-yankovich-_aaalFGsSfY-unsplash.jpg" alt="" width="640" height="310" />
+                    <figcaption>Cracotte</figcaption>
+                </figure><!--
+                --><figure>
+                    <img src="img/img slider/pranay-pareek-TWb7r7flue8-unsplash.jpg" alt="" width="640" height="310" />
+                    <figcaption>Sushi</figcaption>
+    
+                </figure><!--
+                --><figure>
+                    <img src="img/img slider/romain-rullaud-KxvM4PN9x3g-unsplash.jpg"alt="" width="640" height="310" />
+                    <figcaption>Wilders</figcaption>
+
+                </figure><!--
+               --><figure>
+                    <img src="img/img slider/squirrel-3583317_1920.jpg" alt="" width="640" height="310" />
+                    <figcaption>Scratch</figcaption>
+                </figure><!--
+                --><figure>
+                    <img src="img/img slider/squirrel-4304283_1920.jpg" alt="" width="640" height="310" />
+                    <figcaption>Patrick</figcaption>
+            </div>
         </div>
+            
+        <span id="timeline"></span>
     </section>
 
-
-
-
+    
 
     <footer>
         <section class="footerinfo">
@@ -76,16 +111,16 @@
         </div>
         <div class=footer>
             <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-            <span class="iconify" data-icon="ant-design:facebook-outlined" data-inline="false"></span>
-            <span class="iconify" data-icon="fa-brands:pinterest-square" data-inline="false"></span>
-            <span class="iconify" data-icon="ant-design:twitter-circle-filled" data-inline="false"></span>
-            <span class="iconify" data-icon="logos:instagram" data-inline="false"></span>
+            <img title="facebook" src="/img/logo/facebook.png" alt="logofacebook">
+            <img title="twitter" src="/img/logo/icons8-twitter-80.png" alt="logotwitter">
+            <img title="pinterest" src="/img/logo/icons8-pinterest-80.png" alt="logopinterest">
+            <img title="instagram" src="img/logo/icons8-instagram-80.png" alt="logoInstagram">
         </div>
 
     </footer>
 
     <script src="js/index.js"></script>
-
+    <script src="js/burger.js"></script>
 </body>
 
 </html>
