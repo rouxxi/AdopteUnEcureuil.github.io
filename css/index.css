@@ -492,6 +492,7 @@ en largeur il fait 100% x le nombre de slides
     /* ... la propriété animation */
     animation: figcaptionner 32s infinite;
 }
+/* fin du slideshow*/
 
 .footer {
 
