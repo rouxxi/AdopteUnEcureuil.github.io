@@ -153,7 +153,9 @@ body, html{
 
 p {
     font-size: 18px;
-    padding: 2em;
+    padding-bottom: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
 }
 
 #titreArticle {
@@ -184,13 +186,14 @@ h2 {
 }
 
 .photo {
-    width: 300px;
+    width: 450px;
 }
 
 .container {
     display: block;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 2em;
 
 }
 
@@ -272,6 +275,9 @@ footer {
     
     #titreArticle {
         height: 300px;
+    }
+    .photo {
+        width: 300px;
     }
 
 
