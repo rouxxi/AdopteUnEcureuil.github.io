@@ -1,6 +1,6 @@
 console.log("debut");
 
-const profifi = {
+let profifi = {
   name:""
 }
 
@@ -16,11 +16,13 @@ const namesquirrel = document.querySelector("#p6").addEventListener("click", fun
   const squirrelName = document.querySelector("#n6").innerHTML;
 
   profifi.name = squirrelName;
+  
+  profifi = JSON.stringify(profifi)
+
+setCookie("profil",squirrelName,1)
 
 });
 
 
-
-setCookie("profil",JSON.stringify(profifi.name),1)
 
 

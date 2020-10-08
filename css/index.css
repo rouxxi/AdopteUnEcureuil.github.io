@@ -111,19 +111,14 @@ footer a:visited {
 
 
 
-  /*Liens footer*/
-footer a {
-    text-decoration: none;
-    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    background-size: O 100%;
-    transition: background-size .5s;
-  }
-
-
 body:hover, a:hover{
     cursor: url("../img/logo/icons8-noix-25.png"), pointer;
 }
 
+header a {
+    text-decoration: none;
+    color: white;
+}
 
 /*lien a dans la page*/
 
