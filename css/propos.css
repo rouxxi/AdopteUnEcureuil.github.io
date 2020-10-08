@@ -25,7 +25,117 @@ p {
 }
 /*Debut police homogene mobile*/
 
+/*lien a dans la page*/
 
+footer a {
+    text-decoration: none;
+    color: #fcfcfc;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+footer a:hover {
+    background-size: 100% 100%;
+  }
+
+footer a:visited {
+   color: white;
+}
+
+
+
+.menuNav a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+.menuNav a:hover {
+    background-size: 100% 100%;
+  }
+
+.menuNav a:visited {
+
+     color: white;
+  }
+
+
+/* Liens généraux : ça s'affiche sur le logo aussi est-ce que c'est gênant ?*/
+a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(128, 98, 33) 0%, rgba(128, 98, 33, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+  a:hover {
+    background-size: 100% 100%;
+  }
+
+  a:visited {
+     color: #806221;
+  }
+
+  footer a:visited {
+
+    color: white;
+ }
+
+ footer a:hover {
+    background-size: 100% 100%;
+  }
+
+  /* Liens menu de navigation*/
+.menuNav a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+.menuNav a:hover {
+    background-size: 100% 100%;
+  }
+
+.menuNav a:visited {
+
+     color: white;
+  }
+
+  /* Liens généraux : ça s'affiche sur le logo aussi est-ce que c'est gênant ?*/
+a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(128, 98, 33) 0%, rgba(128, 98, 33, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+  a:hover {
+    background-size: 100% 100%;
+  }
+
+  a:visited {
+     color: #806221;
+  }
+  /* Fin liens généraux*/
+
+  /*Liens footer*/
+footer a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+
+body:hover, a:hover{
+    cursor: url("../img/logo/icons8-noix-25.png"), pointer;
+}
+
+
+/*lien a dans la page*/
 /*Debut style footer*/
 
 footer {
@@ -603,6 +713,173 @@ body, html{
     /*Police headerNav*/
 
 }
+body, html{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Debut style barre nav*/
+
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #516743;
+    color: white;
+    min-height: 35px;
+
+    font-size: 1.1rem;
+}
+.headerNav img{
+    filter: invert(98%);
+    padding-left: 15px;
+}
+
+.headerNav ul {
+    display: flex;
+    margin: 0 5px;
+}
+
+.headerNav ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+/*fin style barre nav*/
+
+
+/*Debut style dynamique menu burger*/
+.burger{
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    transition: all 0.5s ease-in-out;
+}
+
+.burgerButtonLign {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 50px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    /*permet de rentre progressif la disparition de la barre centrale*/
+}
+
+.burgerButtonLign::before, 
+.burgerButtonLign::after  {
+    content:"";
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+/*Permet de voir le déplacement des span avec le rotateZ*/
+}
+
+.burger div::before{
+    transform: translateY(-15px);
+}
+
+.burger div::after{
+    transform: translateY(15px);
+}
+
+.burger.active div::before{
+    transform: rotate(45deg) translate(35px, -35px) ;
+}
+
+.burger.active div::after{
+    transform: rotate(-45deg) translate(35px, 35px) ;
+}
+
+.burger.active div {
+    background-color: transparent;
+    /*l'ajout de transparent sur backgroune ne retire maintenant que la barre centrale*/
+    transform: translateX(-50px);
+}
+/*Fin style dynamique menu burger*/
+
+
+/*Debut positionnement et style t Overley*/
+#burgerOverlay{
+    display: none;
+    position : fixed;
+    z-index: 10;
+    top:0;
+    right:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*Fin positionnement et style t Overley*/
+
+
+/*Debut positionnement et style Sidebar*/
+
+#burgerSideBar{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    height: 100%;
+    width: 75%;
+    max-width: 350px;
+    background-color: #516743;
+    background: linear-gradient(#516743, 95%, #9fc08b);
+
+    color: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+}
+#burgerSideBar ul{
+    display: block;
+
+}
+#burgerSideBar-Header{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/banniere_sidebar2.jpg");
+}
+#burgerSideBar-body li{
+    padding: 8px 0 8px 5px;
+}
+#burgerSideBar-body{
+    padding: 10px 5px;
+    font-size: 1.6em;
+}
+
+/*Fin  positionnement et style Sidebar*/
+
+
+
+/*debut style link*/
+
+.headerNav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*fin style link*/
+
+
+
 
 h1, h2{
     color: #806221;
@@ -630,7 +907,7 @@ h1, h2{
 /*Contact form*/
 input[type="text"],
 select,
-textarea {
+textarea, option {
   width: 100%;
   padding: 10px;
   max-height: 140px;
@@ -641,6 +918,7 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
   
 .form {
     text-align: left;
@@ -664,7 +942,7 @@ input[type="submit"] {
   
   /*button hover effect*/
 input[type="submit"]:hover {
-    background-color: #092c12;
+    background-color: #556B2F;
 }
   
 .button {
@@ -673,22 +951,66 @@ input[type="submit"]:hover {
     justify-content: center;
 }
 
-footer {
-    background-color: #516743 ;
-}
+/*partenaire*/
 
 
-.row{
+
+.photo{
     display: flex;
-    box-sizing: border-box;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-right: -.5rem;
-    margin-left: -.5rem;
-    flex-direction: row;
+    margin: 0;
 }
 
-.info{
+.image--cover {
+    width: 170px;
+    height: 170px;
+    border: #fff 3px solid;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.username {
     text-align: center;
-    margin: auto;
-    box-sizing: content-box;
+    padding: 0;
+    margin: 1px;
+}
+
+
+
+/*map*/
+
+.map{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width:1023px){
+    .menuNav{
+        display: none;
+    }
+    
+    .burgerButtonLign, #burgerSideBar,
+     .burgerActivated #burgerOverlay{
+        display: block;
+    }
+
+    .burgerActivated #burgerSideBar{
+        transform: translateX(0);
+    }
+}
+
+@media screen and (min-width:1024px){
+    .burger{
+        display: none;
+    }
+    /*Police headerNav*/
+    .headerNav{
+        font-size: 1.5em;
+    }
+    /*Police headerNav*/
+
 }

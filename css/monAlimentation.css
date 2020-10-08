@@ -19,7 +19,117 @@ p {
 }
 /*Debut police homogene mobile*/
 
+/*lien a dans la page*/
 
+footer a {
+    text-decoration: none;
+    color: #fcfcfc;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+footer a:hover {
+    background-size: 100% 100%;
+  }
+
+footer a:visited {
+   color: white;
+}
+
+
+
+.menuNav a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+.menuNav a:hover {
+    background-size: 100% 100%;
+  }
+
+.menuNav a:visited {
+
+     color: white;
+  }
+
+
+/* Liens généraux : ça s'affiche sur le logo aussi est-ce que c'est gênant ?*/
+a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(128, 98, 33) 0%, rgba(128, 98, 33, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+  a:hover {
+    background-size: 100% 100%;
+  }
+
+  a:visited {
+     color: #806221;
+  }
+
+  footer a:visited {
+
+    color: white;
+ }
+
+ footer a:hover {
+    background-size: 100% 100%;
+  }
+
+  /* Liens menu de navigation*/
+.menuNav a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+.menuNav a:hover {
+    background-size: 100% 100%;
+  }
+
+.menuNav a:visited {
+
+     color: white;
+  }
+
+  /* Liens généraux : ça s'affiche sur le logo aussi est-ce que c'est gênant ?*/
+a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(128, 98, 33) 0%, rgba(128, 98, 33, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+  a:hover {
+    background-size: 100% 100%;
+  }
+
+  a:visited {
+     color: #806221;
+  }
+  /* Fin liens généraux*/
+
+  /*Liens footer*/
+footer a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+
+body:hover, a:hover{
+    cursor: url("../img/logo/icons8-noix-25.png"), pointer;
+}
+
+
+/*lien a dans la page*/
 /*Debut style footer*/
 
 footer {
@@ -235,12 +345,7 @@ footer a {
     color: white;
 }
 
-p {
-    font-size: 18px;
-    padding-bottom: 1em;
-    padding-right: 2em;
-    padding-left: 2em;
-}
+
 
 #titreArticle {
     display: flex;
@@ -263,8 +368,6 @@ h1 {
 }
 h2 {
     color: #806221;
-    padding-left: 2em;
-    padding-right: 2em;
 
 }
 
@@ -278,6 +381,11 @@ h2 {
     overflow: hidden;
     padding-bottom: 2em;
 
+}
+
+
+main{
+    margin: 2em;
 }
 
 
@@ -314,6 +422,10 @@ h2 {
         font-size: 1.5em;
     }
     /*Police headerNav*/
+    main{
+        margin-left:7em;
+        margin-right: 7em;
+    }
   
 
 }
