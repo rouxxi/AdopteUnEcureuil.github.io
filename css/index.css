@@ -260,7 +260,6 @@ a {
 }
 
 .maison, .alimentation, .quisuisje, .adoptemoi{
-    justify-self: center;
     border-radius: 30px;
     box-shadow: gray 5px 5px 6px;
 } 
@@ -541,6 +540,7 @@ en largeur il fait 100% x le nombre de slides
     }
     .visuelFondBanniere{
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         justify-content: space-around;
 
