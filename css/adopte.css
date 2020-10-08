@@ -129,7 +129,9 @@ body:hover, a:hover{
     cursor: url("../img/logo/icons8-noix-25.png"), pointer;
 }
 
-
+a{
+    text-decoration: none;
+}
 /*lien a dans la page*/
 /*Debut style footer*/
 
@@ -224,6 +226,7 @@ footer a {
 .headerNav ul li {
     list-style: none;
     padding: 10px;
+    color: white;
 }
 
 /*fin style barre nav*/

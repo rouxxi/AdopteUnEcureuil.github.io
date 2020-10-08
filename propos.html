@@ -17,11 +17,11 @@
         <div class="menuNav">
         <nav>
             <ul>
-                <li><a href="quiSuisJe.html">Qui suis-je ?</a></li>
-                <li><a href="maMaison.html">Mon habitat</a></li>
-                <li><a href="monAlimentation.html">Mon alimentation</a></li>
-                <li><a href="adopte.html">Adoption</a></li>
-                <li><a href="propos.html">A propos</a></li>
+                <a href="quiSuisJe.html"><li>Qui suis-je ?</li></a>
+                <a href="maMaison.html"><li>Mon habitat</li></a>
+                <a href="monAlimentation.html"><li>Mon alimentation</li></a>
+                <a href="adopte.html"><li>Adoption</li></a>
+                <a href="propos.html"><li>A propos</li></a>
             </ul>
         </nav>
     </div>
@@ -152,7 +152,27 @@
             </div>
         
         </footer>
-    
+    <script>
+    function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+const cucuname = getCookie("profil");
+document.querySelector("#name").innerHTML = cucuname.name;
+
+</script>
     <script src="js/propos.js"></script>
     <script src="js/burger.js"></script>
 </body>
