@@ -3,6 +3,7 @@ body, html{
     margin: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
+    cursor: url("../img/icons8-nut-30.png"), pointer;
 }
 
 .headerNav {
