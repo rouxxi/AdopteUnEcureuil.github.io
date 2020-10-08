@@ -260,23 +260,43 @@ input[type="submit"]:hover {
     justify-content: center;
 }
 
+/*partenaire*/
+
+.photo{
+    display: flex;
+    flex-direction: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.image--cover {
+    width: 170px;
+    height: 170px;
+    border: #fff 3px solid;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: -40px;    
+}
+.username {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 1px;
+}
+
+/*map*/
+
+.map{
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     background-color: #516743 ;
 }
 
-
-.row{
-    display: flex;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    margin-right: -.5rem;
-    margin-left: -.5rem;
-    flex-direction: row;
-}
-
-.info{
-    text-align: center;
-    margin: auto;
-    box-sizing: content-box;
-}
 
