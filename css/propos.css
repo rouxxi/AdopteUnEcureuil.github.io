@@ -218,7 +218,7 @@ h1, h2{
 /*Contact form*/
 input[type="text"],
 select,
-textarea {
+textarea, option {
   width: 100%;
   padding: 10px;
   max-height: 140px;
@@ -229,6 +229,7 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
   
 .form {
     text-align: left;
