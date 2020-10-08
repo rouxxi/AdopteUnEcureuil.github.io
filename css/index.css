@@ -123,7 +123,9 @@ header a {
 /*lien a dans la page*/
 
 
-
+.banniere:hover, .mainTitle{
+    cursor: pointer;
+}
 
 
 

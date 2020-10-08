@@ -180,7 +180,6 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     width: 80px;
     height: 80px;
     transition: all 0.5s ease-in-out;
@@ -393,7 +392,6 @@ footer a {
     padding: 6px 8px;
     text-align: center;
     font-size: 14px;
-    cursor: pointer;
     overflow: visible;
     box-sizing: inherit;
 }
