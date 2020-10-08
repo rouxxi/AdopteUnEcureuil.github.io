@@ -263,9 +263,13 @@ input[type="submit"]:hover {
 
 /*partenaire*/
 
+
+
 .photo{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
 }
 
 .image--cover {
@@ -281,6 +285,8 @@ input[type="submit"]:hover {
     padding: 0;
     margin: 1px;
 }
+
+
 
 /*map*/
 
