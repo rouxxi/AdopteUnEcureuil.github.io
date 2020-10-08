@@ -3,8 +3,26 @@ body, html{
     margin: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
+    /* Curseur noisette*/
     cursor: url("../img/icons8-nut-30.png"), pointer;
 }
+
+/* Liens généraux : ça s'affiche sur le logo aussi est-ce que c'est gênant ?*/
+a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(128, 98, 33) 0%, rgba(128, 98, 33, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+  
+  a:hover {
+    background-size: 100% 100%;
+  }
+
+  a:visited {
+     color: #806221;
+  }
+  /* Fin liens généraux*/
 
 .headerNav {
     display: flex;
@@ -30,6 +48,25 @@ body, html{
     list-style: none;
     padding: 10px;
 }
+
+/* Liens menu de navigation*/
+.menuNav a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+  
+.menuNav a:hover {
+    background-size: 100% 100%;
+  }
+
+.menuNav a:visited {
+    
+     color: white;
+  }
+
+/* fin liens menu de navigation*/
 
 /*fin style barre nav*/
 
@@ -147,10 +184,7 @@ body, html{
 
 }
 
-.headerNav ul li a {
-    text-decoration: none;
-    color: white;
-}
+
 
 main{
 padding-right: 10em;
@@ -162,6 +196,7 @@ p {
     font-size: 18px;
     padding-bottom: 1em;
 }
+
 
 #titreArticle {
     display: flex;
@@ -202,10 +237,25 @@ h2 {
 
 }
 
+/*Liens footer*/
 footer a {
     text-decoration: none;
-    color: #fcfcfc;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+footer a:hover {
+    background-size: 100% 100%;
+  }
+
+footer a:visited {
+    
+   color: white;
 }
+/*Fin liens footer*/
+
+
 
 footer ul{
     padding: 10px;
@@ -243,7 +293,6 @@ footer {
     margin: 5px;
 }
 
-
 .copyright {
     text-align: justify, center;
     font-size: xx-small;
@@ -253,6 +302,14 @@ footer {
 }
 
 
+.copyright a {
+    color: white;
+}
+
+.copyright a:visited  {
+    
+        color: white;
+}
 
 
 /*

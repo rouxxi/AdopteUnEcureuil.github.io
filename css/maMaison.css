@@ -5,6 +5,23 @@ body, html{
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+/* Liens généraux : ça s'affiche sur le logo aussi est-ce que c'est gênant ?*/
+a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(128, 98, 33) 0%, rgba(128, 98, 33, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+  
+  a:hover {
+    background-size: 100% 100%;
+  }
+
+  a:visited {
+     color: #806221;
+  }
+  /* Fin liens généraux*/
+
 .headerNav {
     display: flex;
     justify-content: space-between;
@@ -29,6 +46,23 @@ body, html{
     list-style: none;
     padding: 10px;
 }
+
+/* Liens menu de navigation*/
+.menuNav a {
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+.menuNav a:hover {
+    background-size: 100% 100%;
+  }
+
+.menuNav a:visited {
+    
+     color: white;
+  }
 
 /*fin style barre nav*/
 
@@ -251,24 +285,23 @@ footer {
     padding: 1em;
 }
 
-/*
-.footerInfo a {
+/*Liens footer*/
+footer a {
     text-decoration: none;
-    color: white;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background-size: O 100%;
+    transition: background-size .5s;
+  }
+
+footer a:hover {
+    background-size: 100% 100%;
+  }
+
+footer a:visited {
+    
+   color: white;
 }
-
-.footerInfo ul {
-    display: flex;
-    list-style: none;
-    padding: 0 5px;
-
-}
-
-.footerInfo ul li {
-    padding: 0 15px;
-}
-
-*/
+/*Fin liens footer*/
 
 
 @media screen and (max-width:1023px){
