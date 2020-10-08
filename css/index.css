@@ -563,5 +563,8 @@ en largeur il fait 100% x le nombre de slides
         width: 25vw;
         margin-top: 20px;
     }
+    .mainTitle{
+        min-height: 400px;
+    }
 
 }
