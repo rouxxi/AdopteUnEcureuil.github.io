@@ -224,11 +224,13 @@ footer a {
 /*debut style link*/
 
 .headerNav ul li a {
-    text-decoration: none;
     color: white;
 }
 
+a {
+    text-decoration: none;
 
+}
 /*fin style link*/
 
 
@@ -297,6 +299,9 @@ footer a {
     background-image: url("img/geran-de-klerk-bKhETeDV1WM-unsplash(1).jpg");
 }
 
+.visuelFondBanniere section{
+    cursor: pointer;
+}
 
 /*Debut style slideshow*/
 
