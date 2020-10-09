@@ -171,6 +171,7 @@ body {
 }
 
 #Titreindex {
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,8 +184,20 @@ body {
 }
 
 #Titreindex h1 {
-    background-color: rgba(0, 0, 0, 0.4);
+    text-shadow: -1px -1px rgb(36, 80, 18), 1px 1px rgb(116, 69, 26), -3px 0 4px #000;
+    font-family: "Lato", "Noto sans JP", sans-serif;
+    color: #fcfcfc;
+    margin: 16px auto;
+    font-weight: bolder;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: center;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+
 }
+
 
 
 
@@ -273,6 +286,7 @@ footer {
     align-items: center;
 
 }
+
 .footer {
     display: flex;
     flex-direction: row;
@@ -419,13 +433,37 @@ en largeur il fait 100% x le nombre de slides
 
 @keyframes slider {
 
-    0%, 11%, 100%	{ left: 0 }
-	17%, 23%		{ left: -100% }
-	28%, 35%		{ left: -200% }
-	40%, 47%		{ left: -300% }
-	52%, 59%		{ left: -400% }
-	64%, 80%		{ left: -500% }
-	
+    0%,
+    11%,
+    100% {
+        left: 0
+    }
+
+    17%,
+    23% {
+        left: -100%
+    }
+
+    28%,
+    35% {
+        left: -200%
+    }
+
+    40%,
+    47% {
+        left: -300%
+    }
+
+    52%,
+    59% {
+        left: -400%
+    }
+
+    64%,
+    80% {
+        left: -500%
+    }
+
 }
 
 /* complétez le sélecteur : */
@@ -492,6 +530,7 @@ en largeur il fait 100% x le nombre de slides
     /* ... la propriété animation */
     animation: figcaptionner 32s infinite;
 }
+
 /* fin du slideshow*/
 
 .footer {
