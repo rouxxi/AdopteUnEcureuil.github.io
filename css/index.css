@@ -6,13 +6,14 @@ body {
 /*Debut style barre nav*/
 
 .headerNav {
+    position: static;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #516743;
     color: white;
+    z-index: 1;
     min-height: 35px;
-
     font-size: 1.1rem;
 }
 .headerNav img{
@@ -29,6 +30,7 @@ body {
     list-style: none;
     padding: 10px;
 }
+
 
 /*fin style barre nav*/
 
@@ -158,6 +160,123 @@ body {
 /*fin style link*/
 
 
+.mainTitle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    background-image: url(../img/squirrel_dedimensionner.jpg);
+    background-position: bottom;
+    background-size: cover;
+    font-size: 1em;
+    min-height: 250px;
+}
+
+.mainTitle h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.visuelFondBanniere{
+    display: grid;
+    padding: 20px;
+    grid-gap:20px;
+    grid-template-columns:1fr;
+    grid-row: repeat(5, 200px);
+}
+
+.maison, .alimentation, .quisuisje, .adoptemoi{
+    justify-self: center;
+    border-radius: 30px;
+    box-shadow: gray 5px 5px 6px;
+} 
+
+.banniere{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    font-size: 1.3em;
+    background-position: center;
+    background-size: cover;
+    min-height: 250px;
+    width: 100%;
+    max-width: 580px;
+    min-width: 300px;
+}
+
+.banniere h2{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.maison{
+    background-image: url("../img/tree-3152596_1920.jpg");
+}
+
+.alimentation {
+    background-image: url("../img/animal-927904_1920.jpg");
+}
+
+.quisuisje {
+    background-image: url("../img/squirrel-5603496_1920.jpg");
+}
+
+.adoptemoi{
+    background-image: url("img/geran-de-klerk-bKhETeDV1WM-unsplash(1).jpg");
+}
+
+
+/*Debut style footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #516743;
+    color: white;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+.footerInfo a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerInfo ul {
+    display: flex;
+    list-style: none;
+    padding: 0 5px;
+}
+
+.footerInfo ul li {
+    padding: 0 15px;
+}
+
+
+/*Debut style reseau sociaux*/
+
+.footer img{
+    filter: invert(98%);
+    width: 35px;
+}
+
+/*Debut style reseau sociaux*/
+
+
+
+
+/*fin style footer*/
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1023px){
     .menuNav{
@@ -183,5 +302,32 @@ body {
         font-size: 1.5em;
     }
     /*Police headerNav*/
+    
+    .mainTitle h1 {
+        font-size: xx-large;
+    }
+    .visuelFondBanniere{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    
+    .maison, .alimentation, .quisuisje, .adoptemoi{
+        border-radius: 30px;
+        box-shadow: gray 5px 5px 6px;
+    } 
+    
+    .banniere{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        color: white;
+        font-size: 1.3em;
+        background-position: center;
+        background-size: cover;
+        min-height: 250px;
+        width: 25vw;
+    }
 
 }
